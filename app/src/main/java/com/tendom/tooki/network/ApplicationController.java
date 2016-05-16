@@ -29,7 +29,7 @@ public class ApplicationController extends Application {
     public ServerInterface buildServerInterface() {
         synchronized (ApplicationController.class) {
             if (api == null) {
-                endpoint = String.format("http://175.158.15.101:3000");
+                endpoint = String.format("http://52.79.147.5:3000");
 
                 Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").create();
                 RestAdapter.Builder builder = new RestAdapter.Builder();

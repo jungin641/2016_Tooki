@@ -104,7 +104,7 @@ public class PagerAdapterClass extends PagerAdapter {
                         api.JoinUUID(_uuid, new Callback<MyUUID>() {
                             @Override
                             public void success(MyUUID myUUID, Response response) {
-                                Log.v("uuid", myUUID.uuid);
+                              //  Log.v("uuid", myUUID.uuid);
                                 Intent intent = new Intent().setClass(context,MainActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 context.startActivity(intent);
@@ -112,7 +112,7 @@ public class PagerAdapterClass extends PagerAdapter {
 
                             @Override
                             public void failure(RetrofitError error) {
-                                Log.v("uuid", "fail");
+                              //  Log.v("uuid", "fail");
                                 ((Activity) context).finish();
                             }
                         });
