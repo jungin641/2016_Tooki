@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tutorial_bg">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="83dp"
+                android:layout_height="90dp"
+                android:src="@drawable/tutorial_logo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="당신의 모든 고민들"
+                android:textColor="#ffffff"
+                android:layout_marginTop="19dp" />
+            <ImageView
+                android:layout_width="116dp"
+                android:layout_height="27dp"
+                android:src="@drawable/tutorial_tooki"
+                android:layout_marginTop="11dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="당신의 인생에 닥쳐온 선택의 순간들\n 더 이상 혼자 고민하지 마세요"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="14dp"
+                android:textSize="11dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOOKI가 쉽고 빠르게 그리고 은밀하게\n 당신의 선택을 도와드립니다"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginTop="11dp"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:background="@drawable/xml_border"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="21dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/row1"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginRight="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="19dp"
+                    android:id="@+id/license_1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:text="서비스 이용약관"/>
+                    <ImageView
+                        android:layout_marginLeft="19dp"
+                        android:layout_width="6dp"
+                        android:layout_height="7dp"
+                        android:src="@drawable/triangle_tutorial"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:text="동의"/>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:id="@+id/tutorial_checkbox_1"
+                        android:allowUndo="true"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/row2"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="19dp"
+                    android:id="@+id/license_2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:text="위치정보 이용약관" />
+
+                    <ImageView
+                        android:layout_marginLeft="6dp"
+                        android:layout_width="6dp"
+                        android:layout_height="7dp"
+                        android:src="@drawable/triangle_tutorial"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:text="동의" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:id="@+id/tutorial_checkbox_2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/row3"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:layout_marginRight="7dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="19dp"
+                    android:id="@+id/license_3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:text="개인정보 이용약관" />
+
+                    <ImageView
+                        android:layout_marginLeft="6dp"
+                        android:layout_width="6dp"
+                        android:layout_height="7dp"
+                        android:src="@drawable/triangle_tutorial"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:text="동의" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:id="@+id/tutorial_checkbox_3"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="본 서비스의 이용약관과 위치정보 개인정보 이용약관을 읽었으며 이에 동의합니다"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            android:textSize="8.5dp"
+            android:layout_marginTop="15dp" />
+        <Button
+            android:id="@+id/button_startApp"
+            android:layout_width="167dp"
+            android:layout_height="43.5dp"
+            android:background="#149DB3"
+            android:layout_gravity="center"
+            android:layout_marginTop="20.5dp"
+            android:text="시작하기"
+            android:textColor="#ffffff"
+            android:textSize="18dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp" >
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_back"
+                    android:id="@+id/btn_back"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" android:text="탈퇴 및 초기화"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="232dp"
+            android:layout_height="225.5dp"
+            android:src="@drawable/img_reset"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="52dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="고민했던 모든 순간들의\n 기록이 사라집니다."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="탈퇴 및 초기화를 진행하시겠습니까?"/>
+        <Button
+            android:id="@+id/button_delete_delete"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:background="#149DB3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="초기화"
+            android:textColor="#ffffff"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

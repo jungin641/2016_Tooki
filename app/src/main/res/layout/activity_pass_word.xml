@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".PassWordActivity">
+
+    <LinearLayout
+        android:id="@+id/inputlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/exitBtn"
+            android:src="@drawable/exit_btn" />
+
+        <TextView
+            android:id="@+id/PWText"
+            android:textColor="#ffffff"
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="bottom|center_horizontal"
+            android:text="비밀번호 설정"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="141dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/pass_image1"
+                android:layout_gravity="center"
+                android:src="@drawable/password_line"
+                android:adjustViewBounds="true"
+                android:layout_weight="0.5" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/pass_image2"
+                android:layout_gravity="center"
+                android:src="@drawable/password_line"
+                android:adjustViewBounds="true"
+                android:layout_weight="0.5" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/pass_image3"
+                android:layout_gravity="center"
+                android:src="@drawable/password_line"
+                android:adjustViewBounds="true"
+                android:layout_weight="0.5" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/pass_image4"
+                android:layout_gravity="center"
+                android:src="@drawable/password_line"
+                android:adjustViewBounds="true"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PWlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/inputlayout"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/PWButton1"
+
+            android:textColor="#ffffff"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="1"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp" />
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:id="@+id/PWButton2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="2"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp"
+            android:textIsSelectable="false" />
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:id="@+id/PWButton3"
+            android:text="3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PWlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@+id/PWlayout1">
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:id="@+id/PWButton4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="4"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp" />
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:id="@+id/PWButton5"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="5"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp" />
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:id="@+id/PWButton6"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="6"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/PWlayout3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@+id/PWlayout2">
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:id="@+id/PWButton7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="7"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp" />
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:id="@+id/PWButton8"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="8"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp" />
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:id="@+id/PWButton9"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="9"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/PWlayout4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_below="@+id/PWlayout3">
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center" />
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:id="@+id/PWButton0"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:text="0"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30dp" />
+
+        <ImageView
+
+            android:id="@+id/Erasebtn"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/erase"
+            android:scaleType="center" />
+    </LinearLayout>
+</RelativeLayout>

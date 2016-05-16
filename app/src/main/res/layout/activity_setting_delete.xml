@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp" >
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_back"
+                    android:id="@+id/btn_back"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" android:text="탈퇴 및 초기화"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/appbar">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radiogroup_delete">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:paddingLeft="23dp"
+                android:text="이유를 알려주세요."
+                android:gravity="center_vertical"
+                android:textColor="#ffffff" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dvdline_card" />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:paddingRight="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ffffff"
+                android:allowUndo="true"
+                android:checked="false"
+                android:id="@+id/radio_delete_1"
+                android:text="다른 사람이 날 아는 것 같아요."
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dvdline_card" />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:paddingRight="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ffffff"
+                android:allowUndo="true"
+                android:checked="false"
+                android:id="@+id/radio_delete_2"
+                android:textColor="#ffffff"
+                android:text="접속이 잘 안되거나 오류가 너무 심해요." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dvdline_card" />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:paddingRight="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ffffff"
+                android:allowUndo="true"
+                android:checked="false"
+                android:id="@+id/radio_delete_3"
+                android:textColor="#ffffff"
+                android:text="답변이 너무 늦어요." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dvdline_card" />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:paddingRight="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ffffff"
+                android:allowUndo="true"
+                android:checked="false"
+                android:id="@+id/radio_delete_4"
+                android:textColor="#ffffff"
+                android:text="사용하기 불편해요." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dvdline_card" />
+
+            <RadioButton
+                android:layout_alignParentRight="true"
+                android:paddingRight="23dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#ffffff"
+                android:allowUndo="true"
+                android:checked="false"
+                android:id="@+id/radio_delete_5"
+                android:textColor="#ffffff"
+                android:text="다시 시작할거에요." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dvdline_card" />
+            <Button
+                android:id="@+id/button_delete_next"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:background="#149DB3"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:text="다음"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true">
+
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetStart="0dp" >
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_back"
+                    android:id="@+id/btn_back"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" android:text="만든 사람들"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"/>
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/inventors_linear"
+        android:layout_below="@+id/appbar">
+       <ImageView
+           android:layout_width="360dp"
+           android:layout_height="240dp"
+           android:src="@drawable/inventors2"
+           android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:id="@+id/invetors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="기획\n\n유원일\n\n개발\n\n신재웅\n유정인\n이여경\n임현진\n지해성\n\n디자인\n\n류민정"
+            android:gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

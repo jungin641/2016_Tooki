@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tendom.tooki" >
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+
+    <application
+        android:name=".network.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name=".splash.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".mainpage.MainActivity" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".logpage.MyLogActivity" android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".tutorial.TutorialActivity"></activity>
+        <activity android:name=".commentpage.CommentActivity"></activity>
+        <activity android:name=".alarm.AlarmActivity"></activity>
+        <activity android:name=".settingpage.SettingActivity"></activity>
+        <activity android:name=".settingpage.PassWordActivity"></activity>
+        <activity android:name=".settingpage.AppInfoActivity_Delete"></activity>
+        <activity android:name=".settingpage.AppInfoActivity_Delete2"></activity>
+        <activity android:name=".settingpage.AppInfoActivity_Delete3"></activity>
+        <activity android:name=".settingpage.AppInfoActivity_appinfo"></activity>
+        <activity android:name=".settingpage.AppInfoActivity_gps"></activity>
+        <activity android:name=".settingpage.AppInfoActivity_info"></activity>
+        <activity android:name=".settingpage.AppInfoActivity_license"></activity>
+        <activity android:name=".settingpage.AppInfoActivity_inventors"></activity>
+        <activity android:name=".settingpage.AppInfoActivity_service"></activity>
+
+    </application>
+
+</manifest>

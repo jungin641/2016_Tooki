@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:orientation="vertical"
+    android:id="@+id/no_item_layout"
+    android:background="@drawable/no_select"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginRight="12.5dp">
+
+        <TextView
+            android:id="@+id/questionCard"
+            android:layout_width="340dp"
+            android:textAlignment="center"
+            android:layout_height="65dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="34dp"
+            android:gravity="center"
+            tools:ignore="RtlCompat"
+            android:id="@+id/linearLayout">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:id="@+id/image_of_yes"
+                android:layout_marginRight="12dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_yes2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/NumOfYes"
+                android:layout_marginRight="55.5dp"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:allowUndo="false"/>
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/image_of_no"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_no2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:id="@+id/NumOfNo"
+                android:layout_marginRight="55.5dp"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"/>
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/image_of_chat"
+                android:src="@drawable/ic_comment_small_op"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:alpha="0.6"
+                android:layout_gravity="center_vertical"
+                android:textAlignment="center"
+                android:id="@+id/NumOfComment"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
