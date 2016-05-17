@@ -55,7 +55,8 @@ public class CommentActivity extends AppCompatActivity {
         content_page = (LinearLayout)findViewById(R.id.content_page);
         mlistView = (ListView) findViewById(R.id.listView_comment);
 
-        share_button=(Button)findViewById(R.id.share_button);
+        //공유 버튼
+        /*share_button=(Button)findViewById(R.id.share_button);
         share_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,7 +64,7 @@ public class CommentActivity extends AppCompatActivity {
                 final ClipboardManager clipboardManager = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
                 clipboardManager.setText("www.sopt.org");      }
         });
-
+        */
         btn_back = (Button)findViewById(R.id.btn_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
             @Override
